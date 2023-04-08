@@ -1,5 +1,12 @@
 # UnixTimeStampConverter
 
+Prerequisites
+Before you begin, ensure that you have the following tools installed on your computer:
+
+a. Git
+b. Maven
+c. A Java Development Kit (JDK)
+
 Step 1: Clone the Repository
 Clone the GitHub repository to your local machine. Follow these steps to clone the repository:
 
