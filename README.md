@@ -27,3 +27,5 @@ java -jar <path to JAR file>
 Replace <path to JAR file> with the path to the JAR file that was generated in the previous step.
 
 
+*******Also please hit the API once in postman or in browser before execution as I found that if the API is not hit, it throws error 403 and after hitting it starts to work and was showing status as 200***************************************
+Thank you for Reading and following along!!!!!!
