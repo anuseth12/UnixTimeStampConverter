@@ -1,18 +1,21 @@
 package com.epoccoverter.testcases;
 
+import static io.restassured.RestAssured.given;
+
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Properties;
 
 import com.epocconverter.responsevalidation.Responsevalidation;
-import com.APIEpocCovereter.teststeps.httpmethods;
+
 import com.epocconverter.utilies.*;
 
-import org.apache.http.protocol.HTTP;
+
+
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import io.restassured.response.Response;
@@ -21,21 +24,40 @@ public class TC01_Getrequest {
 	
 	
 	public Logger logger;// for logs
-	//logs
 	
-			
+	String base_url;
+	
+	
+	@BeforeClass
+	public void setup() throws IOException
+	{   
+		Properties pr=LoadProperties.loadproperties1("../APIEpocConverter/URI.Properties");
+		base_url=pr.getProperty("Base_url");
+		//logs
+		System.out.println("base url is"+base_url);
+		
+		
+		logger= LogManager.getLogger(this.getClass());
+		
+		logger.debug("debugging.....");
+		
+	}
+	
+	
 	@Test
 	public void testcase1_get() throws IOException
 	{
-		logger= LogManager.getLogger(this.getClass());
-		logger.info("********** Loading properties file  ***************");
-		Properties pr=LoadProperties.loadproperties1("../APIEpocConverter/URI.Properties");
-	
-		
-		httpmethods http=new httpmethods(pr);
+		long s=1451613802;
 		System.out.println("******************Test case 1 for valid timestamp***************************");
+
+		Response res=
+				given()
+				
+						  
+            .when()
+            .get(base_url+s);
 		
-		Response res=http.getrequest("QA_URI");
+		 System.out.println("Response is"+res.asString());
 		
 	   logger.info("**********Get Request is completed***************");
 	   Responsevalidation.statuscodevalidation(res, 200);
@@ -49,20 +71,21 @@ public class TC01_Getrequest {
      @Test
           public void testcase2_invalidtimestamp() throws IOException
       {
-	logger= LogManager.getLogger(this.getClass());
-	Properties pr=LoadProperties.loadproperties1("../APIEpocConverter/URI.Properties");
-	
-	
-	httpmethods http=new httpmethods(pr);
+    	 String s="asdfasd";
 	System.out.println("******************Test case 2 for invalid timestamp***************************");
 	
-	Response res=http.invalid_getrequest("QA_InvalidURI");
-	//Response res=http.getrequest_invalid("Base_url","asdfasd");
+	Response res=
+			given()
+						  
+        .when()
+        .get(base_url+s);
+	
+	 System.out.println("Response is :"+res.asString());
 	
 	logger.info("**********Get Request is completed***************");
    Responsevalidation.statuscodevalidation(res, 200);
    Assert.assertEquals(res.asString(), "false");
-   
+   logger.info("**********Assertion is completed***************");
  
       
 	
@@ -71,97 +94,107 @@ public class TC01_Getrequest {
 	@Test
 	public void testcase3_get() throws IOException
 	{
-		logger= LogManager.getLogger(this.getClass());
-		logger.info("********** Loading properties file  ***************");
-		Properties pr=LoadProperties.loadproperties1("../APIEpocConverter/URI.Properties");
 		
-		
-		httpmethods http=new httpmethods(pr);
+		long s=2147483648L;
+	
 		System.out.println("******************Test case 3 for timestamp beyond year 2038***************************");
+		Response res=
+				given()
+							  
+	        .when()
+	        .get(base_url+s);
+		
+		 System.out.println("Response is :"+res.asString());
 		
 		
-		Response res=http.getrequest("QA_future");
-		//Response res1=http.invalid_getrequest("QA_URL",);
-		logger.info("**********Get Request is completed***************");
+
 	   Responsevalidation.statuscodevalidation(res, 200);
-	   Responsevalidation.datevalidation(2147483647);
+       Responsevalidation.datevalidation(s);
 		logger.info("**********Date validation is completed***************");
-      }
-	
-	
+  }
+
 	@Test
 	public void testcase4_get() throws IOException
 	{
-		logger= LogManager.getLogger(this.getClass());
-		Properties pr=LoadProperties.loadproperties1("../APIEpocConverter/URI.Properties");
+	 long s=-1451613802;
+
+	System.out.println("******************Test case 4 for Negative unix timestamp***************************");
 		
-		
-		httpmethods http=new httpmethods(pr);
-		System.out.println("******************Test case 4 for Negative unix timestamp***************************");
-		
-		
-		Response res=http.getrequest_futuredate("Base_url1");
-		//Response res1=http.invalid_getrequest("QA_URL",);
+	Response res=
+			given()
+						  
+        .when()
+        .get(base_url+s);
+	
+	 System.out.println("Response is :"+res.asString());
+	 
 		logger.info("**********Get Request is completed***************");
 	   Responsevalidation.statuscodevalidation(res, 200);
-	   Assert.assertEquals(res.asString(), "false");
-      }
-	
-	
+	   Responsevalidation.datevalidation(s);
+	}
+
 	@Test
 	public void testcase5_get() throws IOException
 	{
-		logger= LogManager.getLogger(this.getClass());
-		logger.info("********** Test case 4 for blank timestamp ***************");
-		Properties pr=LoadProperties.loadproperties1("../APIEpocConverter/URI.Properties");
-		
-		
-		httpmethods http=new httpmethods(pr);
+
 		System.out.println("******************Test case 5 for Blank unix timestamp***************************");
+		Response res=
+				given()
+							  
+	        .when()
+	        .get(base_url);
 		
-		
-		Response res=http.getrequest_futuredate("QA_-veurl");
-		//Response res1=http.invalid_getrequest("QA_URL",);
+		 System.out.println("Response is :"+res.asString());
+
 		logger.info("**********Get Request is completed***************");
 	   Responsevalidation.statuscodevalidation(res, 200);
-	   Responsevalidation.datevalidation(-1451613802);
-	 		logger.info("**********Date validation is completed***************");
-      }
-	
+	   Assert.assertEquals(res.asString(), "false");
+	   logger.info("**********Assertion is completed***************");
+
+    }
+//	
 	@Test
 	public void testcase6_get() throws IOException
 	{
-		logger= LogManager.getLogger(this.getClass());
-		Properties pr=LoadProperties.loadproperties1("../APIEpocConverter/URI.Properties");
-		
-		
-		httpmethods http=new httpmethods(pr);
+	 double s=1451613802.123456;
+	
+
 		System.out.println("******************Test case 6 for unix timestamp in microseconds with fractional part***************************");
+		 Response res=
+					given()
+								  
+		        .when()
+		        .get(base_url+s);
+			
+			 System.out.println("Response is :"+res.asString());
 		
 		
-		Response res=http.getrequest_futuredate("QA_fractional");
-		//Response res1=http.invalid_getrequest("QA_URL",);
 		logger.info("**********Get Request is completed***************");
 	   Responsevalidation.statuscodevalidation(res, 200);
+	   
 
-      }
+   }
 	
 	
 	@Test
 	public void testcase7_get() throws IOException
 	{
-		logger= LogManager.getLogger(this.getClass());
-		Properties pr=LoadProperties.loadproperties1("../APIEpocConverter/URI.Properties");
-		
-		
-		httpmethods http=new httpmethods(pr);
+		long s=9999999999999L;
+
 		System.out.println("******************Test case 7 for unix timestamp with very large timestamp***************************");
-		
-		
-		Response res=http.getrequest_futuredate("QA_largetimestamp");
+		 Response res=
+					given()
+								  
+		        .when()
+		        .get(base_url+s);
+			
+			 System.out.println("Response is :"+res.asString());
+
 		logger.info("**********Get Request is completed***************");
 	   Responsevalidation.statuscodevalidation(res, 200);
+	   Responsevalidation.datevalidation(s);
 
-      }
+     }
+	}
 	
-}
+

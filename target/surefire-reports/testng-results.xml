@@ -1,122 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="7" passed="5">
+<testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="7976" started-at="2023-04-08T20:40:11 IST" finished-at="2023-04-08T20:40:19 IST">
+  <suite name="Suite" duration-ms="7020" started-at="2023-04-09T04:12:25 IST" finished-at="2023-04-09T04:12:32 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="7976" started-at="2023-04-08T20:40:11 IST" finished-at="2023-04-08T20:40:19 IST">
-      <class name="com.epoccoverter.testcases.TC2_Getrequest">
-        <test-method status="PASS" signature="testcase1_get()[pri:0, instance:com.epoccoverter.testcases.TC2_Getrequest@536aaa8d]" name="testcase1_get" duration-ms="2328" started-at="2023-04-08T20:40:12 IST" finished-at="2023-04-08T20:40:14 IST">
+    <test name="Test" duration-ms="7020" started-at="2023-04-09T04:12:25 IST" finished-at="2023-04-09T04:12:32 IST">
+      <class name="com.epoccoverter.testcases.TC01_Getrequest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.epoccoverter.testcases.TC01_Getrequest@51e2adc7]" name="setup" is-config="true" duration-ms="388" started-at="2023-04-09T04:12:25 IST" finished-at="2023-04-09T04:12:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testcase1_get()[pri:0, instance:com.epoccoverter.testcases.TC01_Getrequest@51e2adc7]" name="testcase1_get" duration-ms="1690" started-at="2023-04-09T04:12:25 IST" finished-at="2023-04-09T04:12:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase1_get -->
-        <test-method status="FAIL" signature="testcase2_invalidtimestamp()[pri:0, instance:com.epoccoverter.testcases.TC2_Getrequest@536aaa8d]" name="testcase2_invalidtimestamp" duration-ms="1359" started-at="2023-04-08T20:40:14 IST" finished-at="2023-04-08T20:40:15 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [false] but found [<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>403 Forbidden</title>
-<script src="/cdn-cgi/apps/head/d68TQN-2Nl9xNJpFHLNJ6Jj2TPo.js"></script></head><body>
-<h1>Forbidden</h1>
-<p>You don't have permission to access this resource.</p>
-<hr>
-<address>Apache/2.4.52 (Ubuntu) Server at helloacm.com Port 80</address>
-<script>(function(){var js = "window['__CF$cv$params']={r:'7b4b6f07feb9794a',m:'7Xv7U_.yCIv53mg3you0z0hxVPu5Whr8pkJYZ1vYQVg-1680966591-0-Ae5AzRuHY8+kkg0KLrFogoJZwEiug75ZyDCfM9nk8sz7y9uST0rqfmibETFlYVLTszrDD5hLbuAO1Wvr92hBn/f6FiyoCROo7KdFqi8uA+DOCbia/p0SvK/JC51Qai8ojhmRRXlMlUI9XIkjjhvtCi+aPR5/Xo77UGYDOrVRZj1c9RjbbpN+tkAJXTmj10uWUw==',s:[0xe93058472e,0x39231c8e1e],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body></html>
-]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>403 Forbidden</title>
-<script src="/cdn-cgi/apps/head/d68TQN-2Nl9xNJpFHLNJ6Jj2TPo.js"></script></head><body>
-<h1>Forbidden</h1>
-<p>You don't have permission to access this resource.</p>
-<hr>
-<address>Apache/2.4.52 (Ubuntu) Server at helloacm.com Port 80</address>
-<script>(function(){var js = "window['__CF$cv$params']={r:'7b4b6f07feb9794a',m:'7Xv7U_.yCIv53mg3you0z0hxVPu5Whr8pkJYZ1vYQVg-1680966591-0-Ae5AzRuHY8+kkg0KLrFogoJZwEiug75ZyDCfM9nk8sz7y9uST0rqfmibETFlYVLTszrDD5hLbuAO1Wvr92hBn/f6FiyoCROo7KdFqi8uA+DOCbia/p0SvK/JC51Qai8ojhmRRXlMlUI9XIkjjhvtCi+aPR5/Xo77UGYDOrVRZj1c9RjbbpN+tkAJXTmj10uWUw==',s:[0xe93058472e,0x39231c8e1e],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body></html>
-]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at com.epoccoverter.testcases.TC2_Getrequest.testcase2_invalidtimestamp(TC2_Getrequest.java:64)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="testcase2_invalidtimestamp()[pri:0, instance:com.epoccoverter.testcases.TC01_Getrequest@51e2adc7]" name="testcase2_invalidtimestamp" duration-ms="886" started-at="2023-04-09T04:12:27 IST" finished-at="2023-04-09T04:12:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase2_invalidtimestamp -->
-        <test-method status="PASS" signature="testcase3_get()[pri:0, instance:com.epoccoverter.testcases.TC2_Getrequest@536aaa8d]" name="testcase3_get" duration-ms="1439" started-at="2023-04-08T20:40:15 IST" finished-at="2023-04-08T20:40:17 IST">
+        <test-method status="PASS" signature="testcase3_get()[pri:0, instance:com.epoccoverter.testcases.TC01_Getrequest@51e2adc7]" name="testcase3_get" duration-ms="276" started-at="2023-04-09T04:12:28 IST" finished-at="2023-04-09T04:12:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase3_get -->
-        <test-method status="FAIL" signature="testcase4_get()[pri:0, instance:com.epoccoverter.testcases.TC2_Getrequest@536aaa8d]" name="testcase4_get" duration-ms="1432" started-at="2023-04-08T20:40:17 IST" finished-at="2023-04-08T20:40:18 IST">
-          <exception class="java.lang.AssertionError">
+        <test-method status="PASS" signature="testcase4_get()[pri:0, instance:com.epoccoverter.testcases.TC01_Getrequest@51e2adc7]" name="testcase4_get" duration-ms="400" started-at="2023-04-09T04:12:28 IST" finished-at="2023-04-09T04:12:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase4_get -->
+        <test-method status="PASS" signature="testcase5_get()[pri:0, instance:com.epoccoverter.testcases.TC01_Getrequest@51e2adc7]" name="testcase5_get" duration-ms="290" started-at="2023-04-09T04:12:29 IST" finished-at="2023-04-09T04:12:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase5_get -->
+        <test-method status="PASS" signature="testcase6_get()[pri:0, instance:com.epoccoverter.testcases.TC01_Getrequest@51e2adc7]" name="testcase6_get" duration-ms="1291" started-at="2023-04-09T04:12:29 IST" finished-at="2023-04-09T04:12:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase6_get -->
+        <test-method status="FAIL" signature="testcase7_get()[pri:0, instance:com.epoccoverter.testcases.TC01_Getrequest@51e2adc7]" name="testcase7_get" duration-ms="1557" started-at="2023-04-09T04:12:30 IST" finished-at="2023-04-09T04:12:32 IST">
+          <exception class="java.time.format.DateTimeParseException">
             <message>
-              <![CDATA[expected [false] but found [<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>403 Forbidden</title>
-<script src="/cdn-cgi/apps/head/d68TQN-2Nl9xNJpFHLNJ6Jj2TPo.js"></script></head><body>
-<h1>Forbidden</h1>
-<p>You don't have permission to access this resource.</p>
-<hr>
-<address>Apache/2.4.52 (Ubuntu) Server at helloacm.com Port 80</address>
-<script>(function(){var js = "window['__CF$cv$params']={r:'7b4b6f196c617943',m:'0bwwM9UqjE2b6jHDlLyZRbrejPNsnFZfc.7TzG8Hsko-1680966594-0-AVHUZIXWSNkuiIjNs3fWJ/Kk+Bq7s3fWXztfGZLhcDHBqYye5aoFqoL98HKESyUlhCruPUY9B8yr5TcoYxvPd1ryhlyVSb82gnZ/YTOUpitSW4tFDjyJ/W28jk9FnK4+EMHdE4fwxZEYZ2GK86SzdfyIxo08QCf0dxaRnCK7US7F',s:[0x1304b68032,0x66f9af39f2],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body></html>
-]]]>
+              <![CDATA[Text '318857-05-20 21:46:39 GMT+04:00' could not be parsed at index 0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>403 Forbidden</title>
-<script src="/cdn-cgi/apps/head/d68TQN-2Nl9xNJpFHLNJ6Jj2TPo.js"></script></head><body>
-<h1>Forbidden</h1>
-<p>You don't have permission to access this resource.</p>
-<hr>
-<address>Apache/2.4.52 (Ubuntu) Server at helloacm.com Port 80</address>
-<script>(function(){var js = "window['__CF$cv$params']={r:'7b4b6f196c617943',m:'0bwwM9UqjE2b6jHDlLyZRbrejPNsnFZfc.7TzG8Hsko-1680966594-0-AVHUZIXWSNkuiIjNs3fWJ/Kk+Bq7s3fWXztfGZLhcDHBqYye5aoFqoL98HKESyUlhCruPUY9B8yr5TcoYxvPd1ryhlyVSb82gnZ/YTOUpitSW4tFDjyJ/W28jk9FnK4+EMHdE4fwxZEYZ2GK86SzdfyIxo08QCf0dxaRnCK7US7F',s:[0x1304b68032,0x66f9af39f2],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body></html>
-]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at com.epoccoverter.testcases.TC2_Getrequest.testcase4_get(TC2_Getrequest.java:107)
+              <![CDATA[java.time.format.DateTimeParseException: Text '318857-05-20 21:46:39 GMT+04:00' could not be parsed at index 0
+at java.time.format.DateTimeFormatter.parseResolved0(Unknown Source)
+at java.time.format.DateTimeFormatter.parse(Unknown Source)
+at java.time.LocalDate.parse(Unknown Source)
+at com.epocconverter.responsevalidation.Responsevalidation.datevalidation(Responsevalidation.java:40)
+at com.epoccoverter.testcases.TC01_Getrequest.testcase7_get(TC01_Getrequest.java:195)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -151,23 +81,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcase4_get -->
-        <test-method status="PASS" signature="testcase5_get()[pri:0, instance:com.epoccoverter.testcases.TC2_Getrequest@536aaa8d]" name="testcase5_get" duration-ms="328" started-at="2023-04-08T20:40:18 IST" finished-at="2023-04-08T20:40:19 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcase5_get -->
-        <test-method status="PASS" signature="testcase6_get()[pri:0, instance:com.epoccoverter.testcases.TC2_Getrequest@536aaa8d]" name="testcase6_get" duration-ms="490" started-at="2023-04-08T20:40:19 IST" finished-at="2023-04-08T20:40:19 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcase6_get -->
-        <test-method status="PASS" signature="testcase7_get()[pri:0, instance:com.epoccoverter.testcases.TC2_Getrequest@536aaa8d]" name="testcase7_get" duration-ms="342" started-at="2023-04-08T20:40:19 IST" finished-at="2023-04-08T20:40:19 IST">
+          </exception> <!-- java.time.format.DateTimeParseException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase7_get -->
-      </class> <!-- com.epoccoverter.testcases.TC2_Getrequest -->
+      </class> <!-- com.epoccoverter.testcases.TC01_Getrequest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

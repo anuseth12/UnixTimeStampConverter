@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Apr 08 20:43:17 IST 2023</td>
+<td>Started on:</td><td>Sun Apr 09 03:55:52 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>6 seconds (6514 ms)</td>
+<tr><td>Total time:</td><td>5 seconds (5017 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,37 +75,21 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.epoccoverter.testcases.TC2_Getrequest.testcase4_get()'><b>testcase4_get</b><br>Test class: com.epoccoverter.testcases.TC2_Getrequest</td>
-<td><div><pre>java.lang.AssertionError: expected [false] but found [&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
-&lt;html&gt;&lt;head&gt;
-&lt;title&gt;403 Forbidden&lt;/title&gt;
-&lt;script src=&quot;/cdn-cgi/apps/head/d68TQN-2Nl9xNJpFHLNJ6Jj2TPo.js&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;
-&lt;h1&gt;Forbidden&lt;/h1&gt;
-&lt;p&gt;You don&apos;t have permission to access this resource.&lt;/p&gt;
-&lt;hr&gt;
-&lt;address&gt;Apache/2.4.52 (Ubuntu) Server at helloacm.com Port 80&lt;/address&gt;
-&lt;script&gt;(function(){var js = &quot;window[&apos;__CF$cv$params&apos;]={r:&apos;7b4b7399fadc7956&apos;,m:&apos;IO4WrcEjW1mzQDOSH_6PGItXy3juYGUMd.Ln8SAQAbc-1680966778-0-Ac1KXo1wE3he0Kzi5i87mayWhHsqCs9naBlhIo4ClVtxzc9NY0D3OAqyNMRDVntbtaDuC2Uha+FDv/5ClQB5sOef7er71V/V8gpqCUlphbImxT5BXyZd6vhS6pVQShw0+0ltbKqpueUNtNDBxDu46aT1NKD++fSpALsKyefP9EPb&apos;,s:[0x568e6a5f05,0x14f8c3d46e],u:&apos;/cdn-cgi/challenge-platform/h/b&apos;};var now=Date.now()/1000,offset=14400,ts=&apos;&apos;+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement(&apos;script&apos;);_cpo.nonce=&apos;&apos;,_cpo.src=&apos;/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts=&apos;+ts,document.getElementsByTagName(&apos;head&apos;)[0].appendChild(_cpo);&quot;;var _0xh = document.createElement(&apos;iframe&apos;);_0xh.height = 1;_0xh.width = 1;_0xh.style.position = &apos;absolute&apos;;_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = &apos;none&apos;;_0xh.style.visibility = &apos;hidden&apos;;document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement(&apos;script&apos;);_0xj.nonce = &apos;&apos;;_0xj.innerHTML = js;_0xi.getElementsByTagName(&apos;head&apos;)[0].appendChild(_0xj);}}if (document.readyState !== &apos;loading&apos;) {handler();} else if (window.addEventListener) {document.addEventListener(&apos;DOMContentLoaded&apos;, handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== &apos;loading&apos;) {document.onreadystatechange = prev;handler();}};}})();&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;
-]
-	at com.epoccoverter.testcases.TC2_Getrequest.testcase4_get(TC2_Getrequest.java:107)
+<td title='com.epoccoverter.testcases.TC01_Getrequest.testcase7_get()'><b>testcase7_get</b><br>Test class: com.epoccoverter.testcases.TC01_Getrequest</td>
+<td><div><pre>java.time.format.DateTimeParseException: Text &apos;318857-05-20 21:46:39 GMT+04:00&apos; could not be parsed at index 0
+	at java.time.format.DateTimeFormatter.parseResolved0(Unknown Source)
+	at java.time.format.DateTimeFormatter.parse(Unknown Source)
+	at java.time.LocalDate.parse(Unknown Source)
+	at com.epocconverter.responsevalidation.Responsevalidation.datevalidation(Responsevalidation.java:40)
+	at com.epoccoverter.testcases.TC01_Getrequest.testcase7_get(TC01_Getrequest.java:252)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace114990534", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace114990534'><pre>java.lang.AssertionError: expected [false] but found [&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
-&lt;html&gt;&lt;head&gt;
-&lt;title&gt;403 Forbidden&lt;/title&gt;
-&lt;script src=&quot;/cdn-cgi/apps/head/d68TQN-2Nl9xNJpFHLNJ6Jj2TPo.js&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;
-&lt;h1&gt;Forbidden&lt;/h1&gt;
-&lt;p&gt;You don&apos;t have permission to access this resource.&lt;/p&gt;
-&lt;hr&gt;
-&lt;address&gt;Apache/2.4.52 (Ubuntu) Server at helloacm.com Port 80&lt;/address&gt;
-&lt;script&gt;(function(){var js = &quot;window[&apos;__CF$cv$params&apos;]={r:&apos;7b4b7399fadc7956&apos;,m:&apos;IO4WrcEjW1mzQDOSH_6PGItXy3juYGUMd.Ln8SAQAbc-1680966778-0-Ac1KXo1wE3he0Kzi5i87mayWhHsqCs9naBlhIo4ClVtxzc9NY0D3OAqyNMRDVntbtaDuC2Uha+FDv/5ClQB5sOef7er71V/V8gpqCUlphbImxT5BXyZd6vhS6pVQShw0+0ltbKqpueUNtNDBxDu46aT1NKD++fSpALsKyefP9EPb&apos;,s:[0x568e6a5f05,0x14f8c3d46e],u:&apos;/cdn-cgi/challenge-platform/h/b&apos;};var now=Date.now()/1000,offset=14400,ts=&apos;&apos;+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement(&apos;script&apos;);_cpo.nonce=&apos;&apos;,_cpo.src=&apos;/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts=&apos;+ts,document.getElementsByTagName(&apos;head&apos;)[0].appendChild(_cpo);&quot;;var _0xh = document.createElement(&apos;iframe&apos;);_0xh.height = 1;_0xh.width = 1;_0xh.style.position = &apos;absolute&apos;;_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = &apos;none&apos;;_0xh.style.visibility = &apos;hidden&apos;;document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement(&apos;script&apos;);_0xj.nonce = &apos;&apos;;_0xj.innerHTML = js;_0xi.getElementsByTagName(&apos;head&apos;)[0].appendChild(_0xj);}}if (document.readyState !== &apos;loading&apos;) {handler();} else if (window.addEventListener) {document.addEventListener(&apos;DOMContentLoaded&apos;, handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== &apos;loading&apos;) {document.onreadystatechange = prev;handler();}};}})();&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;
-]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at com.epoccoverter.testcases.TC2_Getrequest.testcase4_get(TC2_Getrequest.java:107)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2113367449", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2113367449'><pre>java.time.format.DateTimeParseException: Text &apos;318857-05-20 21:46:39 GMT+04:00&apos; could not be parsed at index 0
+	at java.time.format.DateTimeFormatter.parseResolved0(Unknown Source)
+	at java.time.format.DateTimeFormatter.parse(Unknown Source)
+	at java.time.LocalDate.parse(Unknown Source)
+	at com.epocconverter.responsevalidation.Responsevalidation.datevalidation(Responsevalidation.java:40)
+	at com.epoccoverter.testcases.TC01_Getrequest.testcase7_get(TC01_Getrequest.java:252)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -135,8 +119,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
-<td>com.epoccoverter.testcases.TC2_Getrequest@5f3a4b84</td></tr>
+<td>0</td>
+<td>com.epoccoverter.testcases.TC01_Getrequest@7cbd213e</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -146,35 +130,35 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.epoccoverter.testcases.TC2_Getrequest.testcase6_get()'><b>testcase6_get</b><br>Test class: com.epoccoverter.testcases.TC2_Getrequest</td>
+<td title='com.epoccoverter.testcases.TC01_Getrequest.testcase4_get()'><b>testcase4_get</b><br>Test class: com.epoccoverter.testcases.TC01_Getrequest</td>
 <td></td>
 <td>0</td>
-<td>com.epoccoverter.testcases.TC2_Getrequest@5f3a4b84</td></tr>
+<td>com.epoccoverter.testcases.TC01_Getrequest@7cbd213e</td></tr>
 <tr>
-<td title='com.epoccoverter.testcases.TC2_Getrequest.testcase7_get()'><b>testcase7_get</b><br>Test class: com.epoccoverter.testcases.TC2_Getrequest</td>
+<td title='com.epoccoverter.testcases.TC01_Getrequest.testcase5_get()'><b>testcase5_get</b><br>Test class: com.epoccoverter.testcases.TC01_Getrequest</td>
 <td></td>
 <td>0</td>
-<td>com.epoccoverter.testcases.TC2_Getrequest@5f3a4b84</td></tr>
+<td>com.epoccoverter.testcases.TC01_Getrequest@7cbd213e</td></tr>
 <tr>
-<td title='com.epoccoverter.testcases.TC2_Getrequest.testcase1_get()'><b>testcase1_get</b><br>Test class: com.epoccoverter.testcases.TC2_Getrequest</td>
-<td></td>
-<td>2</td>
-<td>com.epoccoverter.testcases.TC2_Getrequest@5f3a4b84</td></tr>
-<tr>
-<td title='com.epoccoverter.testcases.TC2_Getrequest.testcase3_get()'><b>testcase3_get</b><br>Test class: com.epoccoverter.testcases.TC2_Getrequest</td>
+<td title='com.epoccoverter.testcases.TC01_Getrequest.testcase6_get()'><b>testcase6_get</b><br>Test class: com.epoccoverter.testcases.TC01_Getrequest</td>
 <td></td>
 <td>1</td>
-<td>com.epoccoverter.testcases.TC2_Getrequest@5f3a4b84</td></tr>
+<td>com.epoccoverter.testcases.TC01_Getrequest@7cbd213e</td></tr>
 <tr>
-<td title='com.epoccoverter.testcases.TC2_Getrequest.testcase2_invalidtimestamp()'><b>testcase2_invalidtimestamp</b><br>Test class: com.epoccoverter.testcases.TC2_Getrequest</td>
+<td title='com.epoccoverter.testcases.TC01_Getrequest.testcase3_get()'><b>testcase3_get</b><br>Test class: com.epoccoverter.testcases.TC01_Getrequest</td>
 <td></td>
 <td>0</td>
-<td>com.epoccoverter.testcases.TC2_Getrequest@5f3a4b84</td></tr>
+<td>com.epoccoverter.testcases.TC01_Getrequest@7cbd213e</td></tr>
 <tr>
-<td title='com.epoccoverter.testcases.TC2_Getrequest.testcase5_get()'><b>testcase5_get</b><br>Test class: com.epoccoverter.testcases.TC2_Getrequest</td>
+<td title='com.epoccoverter.testcases.TC01_Getrequest.testcase1_get()'><b>testcase1_get</b><br>Test class: com.epoccoverter.testcases.TC01_Getrequest</td>
+<td></td>
+<td>1</td>
+<td>com.epoccoverter.testcases.TC01_Getrequest@7cbd213e</td></tr>
+<tr>
+<td title='com.epoccoverter.testcases.TC01_Getrequest.testcase2_invalidtimestamp()'><b>testcase2_invalidtimestamp</b><br>Test class: com.epoccoverter.testcases.TC01_Getrequest</td>
 <td></td>
 <td>0</td>
-<td>com.epoccoverter.testcases.TC2_Getrequest@5f3a4b84</td></tr>
+<td>com.epoccoverter.testcases.TC01_Getrequest@7cbd213e</td></tr>
 </table><p>
 </body>
 </html>

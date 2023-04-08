@@ -2,55 +2,51 @@
 <testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="6514" started-at="2023-04-08T20:43:17 IST" finished-at="2023-04-08T20:43:23 IST">
+  <suite name="Suite" duration-ms="5017" started-at="2023-04-09T03:55:52 IST" finished-at="2023-04-09T03:55:57 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="6514" started-at="2023-04-08T20:43:17 IST" finished-at="2023-04-08T20:43:23 IST">
-      <class name="com.epoccoverter.testcases.TC2_Getrequest">
-        <test-method status="PASS" signature="testcase1_get()[pri:0, instance:com.epoccoverter.testcases.TC2_Getrequest@5f3a4b84]" name="testcase1_get" duration-ms="2164" started-at="2023-04-08T20:43:17 IST" finished-at="2023-04-08T20:43:19 IST">
+    <test name="Test" duration-ms="5017" started-at="2023-04-09T03:55:52 IST" finished-at="2023-04-09T03:55:57 IST">
+      <class name="com.epoccoverter.testcases.TC01_Getrequest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.epoccoverter.testcases.TC01_Getrequest@7cbd213e]" name="setup" is-config="true" duration-ms="371" started-at="2023-04-09T03:55:52 IST" finished-at="2023-04-09T03:55:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testcase1_get()[pri:0, instance:com.epoccoverter.testcases.TC01_Getrequest@7cbd213e]" name="testcase1_get" duration-ms="1696" started-at="2023-04-09T03:55:52 IST" finished-at="2023-04-09T03:55:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase1_get -->
-        <test-method status="PASS" signature="testcase2_invalidtimestamp()[pri:0, instance:com.epoccoverter.testcases.TC2_Getrequest@5f3a4b84]" name="testcase2_invalidtimestamp" duration-ms="274" started-at="2023-04-08T20:43:19 IST" finished-at="2023-04-08T20:43:19 IST">
+        <test-method status="PASS" signature="testcase2_invalidtimestamp()[pri:0, instance:com.epoccoverter.testcases.TC01_Getrequest@7cbd213e]" name="testcase2_invalidtimestamp" duration-ms="364" started-at="2023-04-09T03:55:54 IST" finished-at="2023-04-09T03:55:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase2_invalidtimestamp -->
-        <test-method status="PASS" signature="testcase3_get()[pri:0, instance:com.epoccoverter.testcases.TC2_Getrequest@5f3a4b84]" name="testcase3_get" duration-ms="1068" started-at="2023-04-08T20:43:19 IST" finished-at="2023-04-08T20:43:20 IST">
+        <test-method status="PASS" signature="testcase3_get()[pri:0, instance:com.epoccoverter.testcases.TC01_Getrequest@7cbd213e]" name="testcase3_get" duration-ms="322" started-at="2023-04-09T03:55:54 IST" finished-at="2023-04-09T03:55:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase3_get -->
-        <test-method status="FAIL" signature="testcase4_get()[pri:0, instance:com.epoccoverter.testcases.TC2_Getrequest@5f3a4b84]" name="testcase4_get" duration-ms="1841" started-at="2023-04-08T20:43:20 IST" finished-at="2023-04-08T20:43:22 IST">
-          <exception class="java.lang.AssertionError">
+        <test-method status="PASS" signature="testcase4_get()[pri:0, instance:com.epoccoverter.testcases.TC01_Getrequest@7cbd213e]" name="testcase4_get" duration-ms="259" started-at="2023-04-09T03:55:55 IST" finished-at="2023-04-09T03:55:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase4_get -->
+        <test-method status="PASS" signature="testcase5_get()[pri:0, instance:com.epoccoverter.testcases.TC01_Getrequest@7cbd213e]" name="testcase5_get" duration-ms="240" started-at="2023-04-09T03:55:55 IST" finished-at="2023-04-09T03:55:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase5_get -->
+        <test-method status="PASS" signature="testcase6_get()[pri:0, instance:com.epoccoverter.testcases.TC01_Getrequest@7cbd213e]" name="testcase6_get" duration-ms="1267" started-at="2023-04-09T03:55:55 IST" finished-at="2023-04-09T03:55:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase6_get -->
+        <test-method status="FAIL" signature="testcase7_get()[pri:0, instance:com.epoccoverter.testcases.TC01_Getrequest@7cbd213e]" name="testcase7_get" duration-ms="236" started-at="2023-04-09T03:55:56 IST" finished-at="2023-04-09T03:55:57 IST">
+          <exception class="java.time.format.DateTimeParseException">
             <message>
-              <![CDATA[expected [false] but found [<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>403 Forbidden</title>
-<script src="/cdn-cgi/apps/head/d68TQN-2Nl9xNJpFHLNJ6Jj2TPo.js"></script></head><body>
-<h1>Forbidden</h1>
-<p>You don't have permission to access this resource.</p>
-<hr>
-<address>Apache/2.4.52 (Ubuntu) Server at helloacm.com Port 80</address>
-<script>(function(){var js = "window['__CF$cv$params']={r:'7b4b7399fadc7956',m:'IO4WrcEjW1mzQDOSH_6PGItXy3juYGUMd.Ln8SAQAbc-1680966778-0-Ac1KXo1wE3he0Kzi5i87mayWhHsqCs9naBlhIo4ClVtxzc9NY0D3OAqyNMRDVntbtaDuC2Uha+FDv/5ClQB5sOef7er71V/V8gpqCUlphbImxT5BXyZd6vhS6pVQShw0+0ltbKqpueUNtNDBxDu46aT1NKD++fSpALsKyefP9EPb',s:[0x568e6a5f05,0x14f8c3d46e],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body></html>
-]]]>
+              <![CDATA[Text '318857-05-20 21:46:39 GMT+04:00' could not be parsed at index 0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>403 Forbidden</title>
-<script src="/cdn-cgi/apps/head/d68TQN-2Nl9xNJpFHLNJ6Jj2TPo.js"></script></head><body>
-<h1>Forbidden</h1>
-<p>You don't have permission to access this resource.</p>
-<hr>
-<address>Apache/2.4.52 (Ubuntu) Server at helloacm.com Port 80</address>
-<script>(function(){var js = "window['__CF$cv$params']={r:'7b4b7399fadc7956',m:'IO4WrcEjW1mzQDOSH_6PGItXy3juYGUMd.Ln8SAQAbc-1680966778-0-Ac1KXo1wE3he0Kzi5i87mayWhHsqCs9naBlhIo4ClVtxzc9NY0D3OAqyNMRDVntbtaDuC2Uha+FDv/5ClQB5sOef7er71V/V8gpqCUlphbImxT5BXyZd6vhS6pVQShw0+0ltbKqpueUNtNDBxDu46aT1NKD++fSpALsKyefP9EPb',s:[0x568e6a5f05,0x14f8c3d46e],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body></html>
-]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at com.epoccoverter.testcases.TC2_Getrequest.testcase4_get(TC2_Getrequest.java:107)
+              <![CDATA[java.time.format.DateTimeParseException: Text '318857-05-20 21:46:39 GMT+04:00' could not be parsed at index 0
+at java.time.format.DateTimeFormatter.parseResolved0(Unknown Source)
+at java.time.format.DateTimeFormatter.parse(Unknown Source)
+at java.time.LocalDate.parse(Unknown Source)
+at com.epocconverter.responsevalidation.Responsevalidation.datevalidation(Responsevalidation.java:40)
+at com.epoccoverter.testcases.TC01_Getrequest.testcase7_get(TC01_Getrequest.java:252)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -81,23 +77,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcase4_get -->
-        <test-method status="PASS" signature="testcase5_get()[pri:0, instance:com.epoccoverter.testcases.TC2_Getrequest@5f3a4b84]" name="testcase5_get" duration-ms="317" started-at="2023-04-08T20:43:22 IST" finished-at="2023-04-08T20:43:23 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcase5_get -->
-        <test-method status="PASS" signature="testcase6_get()[pri:0, instance:com.epoccoverter.testcases.TC2_Getrequest@5f3a4b84]" name="testcase6_get" duration-ms="310" started-at="2023-04-08T20:43:23 IST" finished-at="2023-04-08T20:43:23 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcase6_get -->
-        <test-method status="PASS" signature="testcase7_get()[pri:0, instance:com.epoccoverter.testcases.TC2_Getrequest@5f3a4b84]" name="testcase7_get" duration-ms="271" started-at="2023-04-08T20:43:23 IST" finished-at="2023-04-08T20:43:23 IST">
+          </exception> <!-- java.time.format.DateTimeParseException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase7_get -->
-      </class> <!-- com.epoccoverter.testcases.TC2_Getrequest -->
+      </class> <!-- com.epoccoverter.testcases.TC01_Getrequest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -6,11 +6,12 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.epoccoverter.testcases.TC2_Getrequest">
+      <class name="com.epoccoverter.testcases.TC01_Getrequest">
         <methods>
-          <include name="testcase4_get"/>
+          <include name="testcase7_get"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.epoccoverter.testcases.TC2_Getrequest -->
+      </class> <!-- com.epoccoverter.testcases.TC01_Getrequest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
