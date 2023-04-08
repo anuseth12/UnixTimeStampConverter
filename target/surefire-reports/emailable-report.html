@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">7,976</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.epoccoverter.testcases.TC2_Getrequest</td><td><a href="#m0">testcase2_invalidtimestamp</a></td><td rowspan="1">1680966614488</td><td rowspan="1">1359</td></tr><tr class="failedeven"><td><a href="#m1">testcase4_get</a></td><td rowspan="1">1680966617304</td><td rowspan="1">1432</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.epoccoverter.testcases.TC2_Getrequest</td><td><a href="#m2">testcase1_get</a></td><td rowspan="1">1680966612150</td><td rowspan="1">2328</td></tr><tr class="passedeven"><td><a href="#m3">testcase3_get</a></td><td rowspan="1">1680966615861</td><td rowspan="1">1439</td></tr><tr class="passedeven"><td><a href="#m4">testcase5_get</a></td><td rowspan="1">1680966618738</td><td rowspan="1">328</td></tr><tr class="passedeven"><td><a href="#m5">testcase6_get</a></td><td rowspan="1">1680966619069</td><td rowspan="1">490</td></tr><tr class="passedeven"><td><a href="#m6">testcase7_get</a></td><td rowspan="1">1680966619561</td><td rowspan="1">342</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">com.epoccoverter.testcases.TC2_Getrequest#testcase2_invalidtimestamp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [false] but found [&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;403 Forbidden&lt;/title&gt;
+&lt;script src=&quot;/cdn-cgi/apps/head/d68TQN-2Nl9xNJpFHLNJ6Jj2TPo.js&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Forbidden&lt;/h1&gt;
+&lt;p&gt;You don&apos;t have permission to access this resource.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.52 (Ubuntu) Server at helloacm.com Port 80&lt;/address&gt;
+&lt;script&gt;(function(){var js = &quot;window[&apos;__CF$cv$params&apos;]={r:&apos;7b4b6f07feb9794a&apos;,m:&apos;7Xv7U_.yCIv53mg3you0z0hxVPu5Whr8pkJYZ1vYQVg-1680966591-0-Ae5AzRuHY8+kkg0KLrFogoJZwEiug75ZyDCfM9nk8sz7y9uST0rqfmibETFlYVLTszrDD5hLbuAO1Wvr92hBn/f6FiyoCROo7KdFqi8uA+DOCbia/p0SvK/JC51Qai8ojhmRRXlMlUI9XIkjjhvtCi+aPR5/Xo77UGYDOrVRZj1c9RjbbpN+tkAJXTmj10uWUw==&apos;,s:[0xe93058472e,0x39231c8e1e],u:&apos;/cdn-cgi/challenge-platform/h/b&apos;};var now=Date.now()/1000,offset=14400,ts=&apos;&apos;+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement(&apos;script&apos;);_cpo.nonce=&apos;&apos;,_cpo.src=&apos;/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts=&apos;+ts,document.getElementsByTagName(&apos;head&apos;)[0].appendChild(_cpo);&quot;;var _0xh = document.createElement(&apos;iframe&apos;);_0xh.height = 1;_0xh.width = 1;_0xh.style.position = &apos;absolute&apos;;_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = &apos;none&apos;;_0xh.style.visibility = &apos;hidden&apos;;document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement(&apos;script&apos;);_0xj.nonce = &apos;&apos;;_0xj.innerHTML = js;_0xi.getElementsByTagName(&apos;head&apos;)[0].appendChild(_0xj);}}if (document.readyState !== &apos;loading&apos;) {handler();} else if (window.addEventListener) {document.addEventListener(&apos;DOMContentLoaded&apos;, handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== &apos;loading&apos;) {document.onreadystatechange = prev;handler();}};}})();&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;
+]
+	at com.epoccoverter.testcases.TC2_Getrequest.testcase2_invalidtimestamp(TC2_Getrequest.java:64)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.epoccoverter.testcases.TC2_Getrequest#testcase4_get</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [false] but found [&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;403 Forbidden&lt;/title&gt;
+&lt;script src=&quot;/cdn-cgi/apps/head/d68TQN-2Nl9xNJpFHLNJ6Jj2TPo.js&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Forbidden&lt;/h1&gt;
+&lt;p&gt;You don&apos;t have permission to access this resource.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.52 (Ubuntu) Server at helloacm.com Port 80&lt;/address&gt;
+&lt;script&gt;(function(){var js = &quot;window[&apos;__CF$cv$params&apos;]={r:&apos;7b4b6f196c617943&apos;,m:&apos;0bwwM9UqjE2b6jHDlLyZRbrejPNsnFZfc.7TzG8Hsko-1680966594-0-AVHUZIXWSNkuiIjNs3fWJ/Kk+Bq7s3fWXztfGZLhcDHBqYye5aoFqoL98HKESyUlhCruPUY9B8yr5TcoYxvPd1ryhlyVSb82gnZ/YTOUpitSW4tFDjyJ/W28jk9FnK4+EMHdE4fwxZEYZ2GK86SzdfyIxo08QCf0dxaRnCK7US7F&apos;,s:[0x1304b68032,0x66f9af39f2],u:&apos;/cdn-cgi/challenge-platform/h/b&apos;};var now=Date.now()/1000,offset=14400,ts=&apos;&apos;+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement(&apos;script&apos;);_cpo.nonce=&apos;&apos;,_cpo.src=&apos;/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts=&apos;+ts,document.getElementsByTagName(&apos;head&apos;)[0].appendChild(_cpo);&quot;;var _0xh = document.createElement(&apos;iframe&apos;);_0xh.height = 1;_0xh.width = 1;_0xh.style.position = &apos;absolute&apos;;_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = &apos;none&apos;;_0xh.style.visibility = &apos;hidden&apos;;document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement(&apos;script&apos;);_0xj.nonce = &apos;&apos;;_0xj.innerHTML = js;_0xi.getElementsByTagName(&apos;head&apos;)[0].appendChild(_0xj);}}if (document.readyState !== &apos;loading&apos;) {handler();} else if (window.addEventListener) {document.addEventListener(&apos;DOMContentLoaded&apos;, handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== &apos;loading&apos;) {document.onreadystatechange = prev;handler();}};}})();&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;
+]
+	at com.epoccoverter.testcases.TC2_Getrequest.testcase4_get(TC2_Getrequest.java:107)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.epoccoverter.testcases.TC2_Getrequest#testcase1_get</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.epoccoverter.testcases.TC2_Getrequest#testcase3_get</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.epoccoverter.testcases.TC2_Getrequest#testcase5_get</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.epoccoverter.testcases.TC2_Getrequest#testcase6_get</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.epoccoverter.testcases.TC2_Getrequest#testcase7_get</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
